@@ -2,14 +2,14 @@
 
 Round soft input mode for Android Wear
 
-# Screenshots
+## Screenshots
 
-# Features
+## Features
 
-# Usage
+## Usage
 
-## Basic
+### Basic
 
-## Customized
+### Customized
 
-# Coming up
+## Coming up
