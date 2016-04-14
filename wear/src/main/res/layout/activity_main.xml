@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+	<data>
+		<variable
+			name="viewModel"
+			type="com.vmota.roundsoftinput.sample.MainActivityViewModel"/>
+	</data>
+
+	<android.support.wearable.view.BoxInsetLayout
+		android:id="@+id/watch_view_stub"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="vmota.com.sample.MainActivity">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:orientation="vertical"
+			app:layout_box="left|right">
+
+
+			<EditText
+				android:id="@+id/et_normal_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginBottom="10dp"
+				android:background="@android:color/transparent"
+				android:gravity="center"
+				android:hint="Tap me to begin writing text"
+				android:onClick="startSoftInputActivity"
+				android:text="@{viewModel.insertedText}"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<EditText
+				android:id="@+id/et_number_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@android:color/transparent"
+				android:gravity="center"
+				android:hint="Tap me to begin writing numbers"
+				android:onClick="startSoftInputActivityCustomSet"
+				android:text="@{viewModel.insertedTextCustom}"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+		</LinearLayout>
+
+
+	</android.support.wearable.view.BoxInsetLayout>
+</layout>

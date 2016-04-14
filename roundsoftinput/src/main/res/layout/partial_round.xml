@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!--This next view is present only on round screens, so if detected, its a rounded shape screen -->
+	<View
+		android:id="@+id/dummy"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"/>
+
+	<include
+		layout="@layout/round_keyboard"/>
+
+</FrameLayout>

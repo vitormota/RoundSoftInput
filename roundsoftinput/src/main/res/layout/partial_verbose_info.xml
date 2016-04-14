@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+	<data>
+		<import type="android.view.View"/>
+		<variable
+			name="debug"
+			type="com.vmota.roundsoftinput.DebugOptions"/>
+		<variable
+			name="viewModel"
+			type="com.vmota.roundsoftinput.InputViewModel"/>
+	</data>
+
+	<merge>
+		<TextView
+			android:id="@+id/tv_rads"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="45dp"
+			android:text="@{String.format(@string/vrads,viewModel.rads)}"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:visibility="@{debug.showVerboseInfo ? View.VISIBLE : View.GONE}"/>
+		<TextView
+			android:id="@+id/tv_xy_coords"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="46dp"
+			android:text="@{String.format(@string/xy_coordinates,viewModel.x,viewModel.y)}"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:visibility="@{debug.showVerboseInfo ? View.VISIBLE : View.GONE}"/>
+	</merge>
+</layout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<data>
+		<import type="android.view.View"/>
+		<variable
+			name="debug"
+			type="com.vmota.roundsoftinput.DebugOptions"/>
+	</data>
+	<merge>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_centerInParent="true"
+			android:background="@color/grey"
+			android:visibility="@{debug.showCrossReferential ? View.VISIBLE : View.GONE}"/>
+		<View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:background="@color/grey"
+			android:visibility="@{debug.showCrossReferential ? View.VISIBLE : View.GONE}"/>
+	</merge>
+</layout>

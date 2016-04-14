@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'round-soft-input'
+
+    publishedGroupId = 'com.vmota.roundsoftinput'
+    libraryName = 'roundsoftinputlib'
+    artifact = 'roundsoftinputlib'
+
+    libraryDescription = 'A round soft input mode for Android Wear devices'
+
+    siteUrl = 'https://github.com/vitormota/RoundSoftInput'
+    gitUrl = 'https://github.com/vitormota/RoundSoftInput.git'
+
+    libraryVersion = '0.9.0'
+
+    developerId = 'vitormota'
+    developerName = 'Vitor Mota'
+    developerEmail = 'vitormanuelmotasilva@gmail.com'
+
+    licenseName = 'The MIT License (MIT)'
+    licenseUrl = 'https://github.com/vitormota/RoundSoftInput/blob/master/LICENSE'
+    allLicenses = ["MIT"]
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "0.9.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.support:wearable:1.3.0'
+    compile 'com.ibm.icu:icu4j:56.1'
+}
+
+// Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

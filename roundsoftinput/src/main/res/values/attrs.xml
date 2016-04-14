@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="SofInputKey">
+		<attr name="expanded" format="boolean"/>
+		<attr name="xPivotFraction" format="float"/>
+		<attr name="yPivotFraction" format="float"/>
+	</declare-styleable>
+
+</resources>

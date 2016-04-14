@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<TextView
+		android:id="@+id/tv_info_text"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="bottom|center_horizontal"
+		android:layout_marginBottom="15dp"
+		android:text="@string/confirm_exit"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<LinearLayout
+		android:layout_marginBottom="15dp"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+
+		<ImageView
+			android:id="@+id/iv_cancel"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:onClick="dismissOverlay"
+			android:src="@drawable/ic_cancel"/>
+		<ImageView
+			android:id="@+id/iv_done"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:onClick="inputDone"
+			android:src="@drawable/ic_check_circle"/>
+	</LinearLayout>
+
+</merge>

@@ -1,0 +1,2 @@
+include ':mobile', ':wear', ':roundsoftinputlib'
+project(':roundsoftinputlib').projectDir = new File('roundsoftinput')

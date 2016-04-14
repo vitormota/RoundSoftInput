@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">RoundSoftInput</string>
+	<string name="soft_input_mode">Soft Input Mode</string>
+	<string name="vrads">Rads: %1$1.3f</string>
+	<string name="xy_coordinates">x: %1$01.1f / y: %2$01.1f</string>
+	<string name="long_press_intro">Long press to exit</string>
+	<string name="confirm_exit">Done text input?</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+	<data>
+		<variable
+			name="debug"
+			type="com.vmota.roundsoftinput.DebugOptions"/>
+		<variable
+			name="viewModel"
+			type="com.vmota.roundsoftinput.InputViewModel"/>
+	</data>
+
+	<RelativeLayout
+		android:id="@+id/rl_soft_input_root"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<include
+			layout="@layout/control_cross_referential"
+			bind:debug="@{debug}"/>
+
+		<include
+			layout="@layout/partial_verbose_info"
+			bind:debug="@{debug}"
+			bind:viewModel="@{viewModel}"/>
+
+
+		<EditText
+			android:layout_centerInParent="true"
+			android:paddingLeft="25dp"
+			android:paddingRight="25dp"
+			android:id="@+id/et_text_input"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:inputType="text"
+			android:maxLines="2"
+			android:text="@{viewModel.textInput}"
+			bind:endPosition="@{viewModel.selectionEnd}"
+			bind:startPosition="@{viewModel.selectionStart}"/>
+
+
+		<LinearLayout
+			android:id="@+id/dismiss_overlay"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#C0000000"
+			android:orientation="vertical"
+			android:visibility="invisible">
+
+			<include layout="@layout/control_exit_confirm"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+</layout>
