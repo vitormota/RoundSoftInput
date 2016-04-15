@@ -21,7 +21,6 @@ public class InputViewModelTest {
 
 	@Test
 	public void testTouchOn() throws Exception {
-		//TODO: ~300ms run time, optimize
 		Assert.assertEquals(false, mViewModels.get(0).getModelAt(0).isExpanded());
 		Assert.assertEquals(false, mViewModels.get(1).getModelAt(0).isExpanded());
 		Assert.assertEquals(false, mViewModels.get(2).getModelAt(0).isExpanded());

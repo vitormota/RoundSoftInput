@@ -23,7 +23,7 @@ Add a dependency to your `build.gradle`:
 
 ```
 dependencies {
-  compile 'com.vmota.roundsoftinput:roundsoftinputlib:0.9.0'
+  compile 'com.github.vmota:roundsoftinputlib:0.9.0'
 }
 ```
 
