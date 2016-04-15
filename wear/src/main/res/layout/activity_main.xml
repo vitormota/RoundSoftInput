@@ -6,7 +6,7 @@
 	<data>
 		<variable
 			name="viewModel"
-			type="com.vmota.roundsoftinput.sample.MainActivityViewModel"/>
+			type="com.github.vmota.roundsoftinputlib.sample.MainActivityViewModel"/>
 	</data>
 
 	<android.support.wearable.view.BoxInsetLayout

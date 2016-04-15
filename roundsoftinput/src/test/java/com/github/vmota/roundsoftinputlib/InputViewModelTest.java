@@ -1,4 +1,4 @@
-package com.vmota.roundsoftinput;
+package com.github.vmota.roundsoftinputlib;
 
 import junit.framework.Assert;
 

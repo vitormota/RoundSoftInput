@@ -1,4 +1,4 @@
-package com.vmota.roundsoftinput;
+package com.github.vmota.roundsoftinputlib;
 
 import android.content.Intent;
 import android.graphics.Point;
@@ -15,8 +15,8 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.vmota.roundsoftinput.databinding.ControlSoftKeyBinding;
-import com.vmota.roundsoftinput.databinding.RoundKeyboardBinding;
+import com.github.vmota.roundsoftinputlib.databinding.ControlSoftKeyBinding;
+import com.github.vmota.roundsoftinputlib.databinding.RoundKeyboardBinding;
 
 /**
  * Created by vitor on 06/03/2016.

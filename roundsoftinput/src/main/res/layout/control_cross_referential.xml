@@ -5,7 +5,7 @@
 		<import type="android.view.View"/>
 		<variable
 			name="debug"
-			type="com.vmota.roundsoftinput.DebugOptions"/>
+			type="com.github.vmota.roundsoftinputlib.DebugOptions"/>
 	</data>
 	<merge>
 		<View

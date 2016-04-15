@@ -6,10 +6,10 @@
 	<data>
 		<variable
 			name="debug"
-			type="com.vmota.roundsoftinput.DebugOptions"/>
+			type="com.github.vmota.roundsoftinputlib.DebugOptions"/>
 		<variable
 			name="viewModel"
-			type="com.vmota.roundsoftinput.InputViewModel"/>
+			type="com.github.vmota.roundsoftinputlib.InputViewModel"/>
 	</data>
 
 	<RelativeLayout

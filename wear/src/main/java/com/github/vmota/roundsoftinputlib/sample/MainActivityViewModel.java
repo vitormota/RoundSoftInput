@@ -1,4 +1,4 @@
-package com.vmota.roundsoftinput.sample;
+package com.github.vmota.roundsoftinputlib.sample;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
