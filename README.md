@@ -19,6 +19,22 @@ Round soft input mode for Android Wear
 
 ## Usage
 
+Add a dependency to your `build.gradle`:
+
+```
+dependencies {
+  compile 'com.vmota.roundsoftinput:roundsoftinputlib:0.9.0'
+}
+```
+
+And enable databinding:
+
+```
+dataBinding {
+ enabled = true
+}
+```
+
 ### Basic
 
 1. Start SoftInputActivity
