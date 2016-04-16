@@ -1,4 +1,4 @@
-package com.github.vmota.roundsoftinputlib;
+package com.github.vitormota.roundsoftinputlib;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

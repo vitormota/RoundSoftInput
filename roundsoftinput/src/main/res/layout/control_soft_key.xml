@@ -7,10 +7,10 @@
 		<import type="java.lang.String"/>
 		<variable
 			name="inputModel"
-			type="com.github.vmota.roundsoftinputlib.InputModel"/>
+			type="com.github.vitormota.roundsoftinputlib.InputModel"/>
 	</data>
 
-	<com.github.vmota.roundsoftinputlib.SofInputKey
+	<com.github.vitormota.roundsoftinputlib.SofInputKey
 		android:id="@+id/sik_key"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

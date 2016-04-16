@@ -5,7 +5,7 @@ ext {
     bintrayRepo = 'maven'
     bintrayName = 'round-soft-input'
 
-    publishedGroupId = 'com.github.vmota'
+    publishedGroupId = 'com.github.vitormota'
     libraryName = 'roundsoftinputlib'
     artifact = 'roundsoftinputlib'
 

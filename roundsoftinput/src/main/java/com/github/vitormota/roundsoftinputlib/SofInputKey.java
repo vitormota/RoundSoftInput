@@ -1,4 +1,4 @@
-package com.github.vmota.roundsoftinputlib;
+package com.github.vitormota.roundsoftinputlib;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;

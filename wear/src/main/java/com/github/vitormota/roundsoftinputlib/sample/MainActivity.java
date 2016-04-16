@@ -1,4 +1,4 @@
-package com.github.vmota.roundsoftinputlib.sample;
+package com.github.vitormota.roundsoftinputlib.sample;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.github.vmota.roundsoftinputlib.sample.databinding.ActivityMainBinding;
-import com.github.vmota.roundsoftinputlib.SoftInputActivity;
+import com.github.vitormota.roundsoftinputlib.sample.databinding.ActivityMainBinding;
+import com.github.vitormota.roundsoftinputlib.SoftInputActivity;
 
 public class MainActivity
 		extends Activity {

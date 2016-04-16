@@ -1,4 +1,4 @@
-package com.github.vmota.roundsoftinputlib;
+package com.github.vitormota.roundsoftinputlib;
 
 /**
  * Created by vitor on 06/03/2016.

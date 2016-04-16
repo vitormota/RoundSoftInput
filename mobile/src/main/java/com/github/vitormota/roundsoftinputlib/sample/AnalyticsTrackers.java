@@ -1,4 +1,4 @@
-package vmota.com.sample;
+package com.github.vitormota.roundsoftinputlib.sample;
 
 import android.content.Context;
 
